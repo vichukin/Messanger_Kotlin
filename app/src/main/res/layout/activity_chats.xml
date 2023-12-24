@@ -7,42 +7,67 @@
     android:background="#FFFFFF"
     tools:context=".ChatsActivity">
 
+
+
+    <!--    <LinearLayout-->
+<!--        android:layout_width="412dp"-->
+<!--        android:layout_height="0dp"-->
+
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/linearLayout"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
+
+
+<!--    </LinearLayout>-->
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="47dp"
-        android:background="#49CBCF"
-        android:baselineAligned="false"
-        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#B2CEEF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="490dp"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Chats"
-            android:textSize="34sp"
-            android:textStyle="bold" />
+            android:orientation="horizontal"
+            android:background="#4EDCDC"
+            >
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Chats"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+<!--            <Button-->
+<!--                android:id="@+id/button3"-->
+<!--                android:layout_width="325dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Log out" />-->
+        </LinearLayout>
+
+        <ListView
+
+            android:id="@+id/messageList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
 
         <Button
-            android:id="@+id/button3"
-            android:layout_width="325dp"
+            android:id="@+id/send_btn"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Log out" />
-
+            android:text="@string/send" />
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="412dp"
-        android:layout_height="0dp"
-        android:background="#B2CEEF"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"></LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
